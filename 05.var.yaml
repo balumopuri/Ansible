@@ -2,8 +2,10 @@
   hosts: local
   connection: local
   vars:
-    my_variable: "This is a variable"
+    COURSE: Devops with AWS
+    DURATION: 3 months
+    TRAINER: Siva
   tasks:
   - name: print the value of variable
     ansible.builtin.debug:
-      msg: "The value of variable is {{ my_variable }}"
+      msg: " {{ COURSE }} - {{ DURATION }} - {{ TRAINER }}"
