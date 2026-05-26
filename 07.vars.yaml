@@ -2,8 +2,8 @@
   hosts: local
   connection: local
   vars_files: 
-  - var.yaml
+  - course.yaml
   tasks:
   - name: print course of information
-    ansible.builtin.include_vars:
+    ansible.builtin.debug:
       msg: "COURSE is {{ COURSE }}, DURATION is {{ DURATION }} and TRAINER is {{ TRAINER }}"
