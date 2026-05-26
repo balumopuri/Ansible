@@ -4,6 +4,6 @@
   vars_files: 
   - var.yaml
   tasks:
-  - name: include variables from file
+  - name: print course of information
     ansible.builtin.include_vars:
       msg: "COURSE is {{ COURSE }}, DURATION is {{ DURATION }} and TRAINER is {{ TRAINER }}"
