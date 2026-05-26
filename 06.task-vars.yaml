@@ -6,7 +6,7 @@
     DURATION: 3 months
     TRAINER: Siva
   tasks:
-    - name: print the value of variable
+    - name: print the value of variables
       vars:                      # Task level variables
         COURSE: Ansible for Beginners
         DURATION: 2 months
