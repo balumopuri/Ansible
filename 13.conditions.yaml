@@ -14,7 +14,7 @@
         state: present
       when: ansible_os_family == "Debian"
 
-    - name: Start the Nginx
+    - name: start the Nginx
       ansible.builtin.dnf:
       state: start
       msg: (start the nginx)
